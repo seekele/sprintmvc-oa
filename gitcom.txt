@@ -1,0 +1,65 @@
+进入 git 仓库目录 右击 选中 Git Bash Here   打开命令
+
+
+
+即“提交内容”中的Author和Email
+
+git config --global user.name "名字"
+git config --global user.email "邮箱"
+
+
+git status
+
+git init         --初始化仓库
+
+git add demo.txt     --提交代码前先添加
+
+
+git commit -m "text commit"    其中commit表示提交，-m表示提交信息，提交信息写在双引号""内
+
+
+git log       --打印提交日志
+
+
+git branch   --查看分支情况
+
+git branch suba   --创建子分支
+
+git checkout suba  --切换到子分支
+
+git checkout -b subb   --创建并切换分支
+
+
+git merge suba      --切换到主分支  将分支suba 合并到master分支
+
+git branch -d suba    --删除suba 分支（需要先合并分支）  强制删除  -D
+
+git tag v1.0         --为当前分支添加标签   git tag 查看
+git checkout v1.0    --切换到该标签下的代码状态
+
+
+
+加入公钥
+测试跟GitHub的链接
+ssh -T git@github.com
+
+上传数据
+git push origin master
+
+
+下载数据
+git pull origin master
+
+
+
+github 下载数据  点击 Clone or download 
+
+本机目录下 git clone https://github.com/seekele/sprintmvc-oa.git
+
+
+
+
+
+
+
+
